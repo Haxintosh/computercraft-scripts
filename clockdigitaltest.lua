@@ -1,5 +1,7 @@
 local monitor = peripheral.find("monitor")
 local request = http.get ("http://worldtimeapi.org/api/ip")
 local requestRep = request.readAll()
-local preDatetime = string.find(requestRep, "datetime:")
+local datetimeFind = string.find(requestRep, "datetime")
+print(datetimeFind)
+local preDatetime = string.sub(requestRep, datetimeFind + 1)
 print(preDatetime)

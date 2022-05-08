@@ -14,9 +14,11 @@ print(month)
 local day = string.sub(datetime, 9, 10)
 print(day)
 local findT = string.find(datetime, "T")
-local hour = string.sub(datetime, findT, findT+2)
+local hour = string.sub(datetime, findT+1, findT+2)
 print(hour)
-local minute = string.sub(datetime, findT+5, findT + 6)
+local minute = string.sub(datetime, findT+4, findT + 5)
 print(minute)
+local second = string.sub(datetime, findT+6, findT+7)
+print(second)
 
 

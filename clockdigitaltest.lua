@@ -18,7 +18,23 @@ local hour = string.sub(datetime, findT+1, findT+2)
 print(hour)
 local minute = string.sub(datetime, findT+4, findT + 5)
 print(minute)
-local second = string.sub(datetime, findT+6, findT+7)
+local second = string.sub(datetime, findT+7, findT+8)
 print(second)
+local monitor.clear()
+local monitor.setCursorPos(1, 1)
+local monitor.write("Year: " + year)
+local monitor.setCursorPos(1, 2)
+local monitor.write("Month: " + month)
+local monitor.setCursorPos(1, 3)
+local monitor.write("Day: " + day)
+local monitor.setCursorPos(1, 4)
+local monitor.write("Hour: " + hour)
+local monitor.setCursorPos(1, 5)
+local monitor.write("Minutes: " + minute)
+local monitor.setCursorPos(1, 6)
+local monitor.write("Seconds: " + second)
+
+
+
 
 

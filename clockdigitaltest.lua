@@ -1,3 +1,4 @@
+-- not perfect but lays the cornerstone for another project ;)
 local monitor = peripheral.find("monitor")
 monitor.setTextScale(0.5)
 while(true)
